@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+	<script>
+		function isInteger() {
+			var num=+document.getElementById('inputNumber').value;  
+			var i=(num^0)===num;
+			alert(i);
+		}
+	</script>
+  
+	<div>
+		<label for="inputNumber">Введите число:</label>
+		<input type="text" name="num" id="inputNumber">
+	</div>
+  
+	<input type="button" value="Проверка" onclick="isInteger()">
+	<hr>
+	<script>
+		function readValues(){
+			var a = document.getElementById('aValue').value;
+			var b = document.getElementById('bValue').value;
+			var i = (a^b)===(b^a);
+			var j = (a&b)===(b&a);
+			var k = (a|b)===(b|a)
+			alert('('+a+' ^ '+b+') == ('+b+' ^ '+a+') - '+i);
+			alert('('+a+' & '+b+') == ('+b+' & '+a+') - '+j);
+			alert('('+a+' | '+b+') == ('+b+' | '+a+') - '+k);
+		}
+		
+	</script>
+	<input type="text" name="aValue" id="aValue" placeholder="Значение а.."><br>
+	<input type="text" name="bValue" id="bValue" placeholder="Значение b.."><br>
+	<input type="button" value="Проверка" onclick="readValues()">
+	
+</body>
+
+</html>

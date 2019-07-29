@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<script>	
+// Перепишите функцию, используя оператор '?' или '||'		
+	// ?
+
+	/*
+			function checkAge(age){
+				return(age>18) ? true : confirm('Родители разрешили?');
+			}
+		
+	// ||
+			function checkAge(age){
+				return(age>18) || confirm('Родители разрешили?');
+			}
+			
+			var age = prompt('Возраст?');
+			if (checkAge(age)) {
+				alert('Yes');
+			} else {
+				alert('No');
+			}
+	
+
+// Функция min
+			
+			function min(a,b) {
+				return(a < b) ? a : (a > b) ? b : 'нет. оба равны';
+			}
+			var a = +prompt('Введи а:'), b = +prompt('Введи b:');
+			alert('Наименьшее: ' +min(a,b));
+	*/
+
+// Функция pow(x,n)			
+			function pow(x,n) {
+				var y=1;
+				for (var i=0; i < n; i++){
+					y *= x;
+				}
+				return y;
+			}
+			var x = +prompt('Введи число:',''), n = +prompt('Введи степень:','');
+				while (n<=1){
+					n= +prompt('Введи степень > 1','');
+					if (n>0) break;
+				}
+				alert(pow(x,n));
+			
+			
+			
+		</script>
+	</body>
+
+</html>
